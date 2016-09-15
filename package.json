@@ -1,0 +1,51 @@
+{
+  "name": "chapter-3-webpack-babel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elyseko/chapter-3-webpack-babel.git"
+  },
+  "author": "elyseko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elyseko/chapter-3-webpack-babel/issues"
+  },
+  "homepage": "https://github.com/elyseko/chapter-3-webpack-babel#readme",
+  "devDependencies": {
+    "babel-cli": "^6.14.0"
+  },
+  "dependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "autoprefixer": "6.4.0",
+    "babel-core": "6.14.0",
+    "babel-eslint": "6.1.2",
+    "babel-jest": "15.0.0",
+    "babel-loader": "6.2.5",
+    "babel-plugin-transform-class-properties": "6.11.5",
+    "babel-plugin-transform-object-rest-spread": "6.8.0",
+    "babel-plugin-transform-react-constant-elements": "6.9.1",
+    "babel-plugin-transform-regenerator": "6.14.0",
+    "babel-plugin-transform-runtime": "6.15.0",
+    "babel-preset-latest": "6.14.0",
+    "babel-preset-react": "6.11.1",
+    "babel-runtime": "6.11.6",
+    "extract-text-webpack-plugin": "1.0.1",
+    "file-loader": "0.9.0",
+    "html-loader": "0.4.3",
+    "html-webpack-plugin": "2.22.0",
+    "json-loader": "0.5.4",
+    "object-assign": "4.1.0",
+    "postcss-loader": "0.11.1",
+    "promise": "7.1.1",
+    "style-loader": "0.13.1",
+    "url-loader": "0.5.7",
+    "webpack": "1.13.2",
+    "webpack-dev-server": "1.15.1"
+  }
+}
