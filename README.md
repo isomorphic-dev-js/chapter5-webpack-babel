@@ -1,21 +1,28 @@
 # chapter-4-webpack-babel
 
 ## Getting started
-
-$ npm install
+```
+npm install
+```
 
 There are many examples in this repo, but to run the complete and final webpack
 build, run the following command.
 
-$ npm start
+```
+npm start
+```
 
 To run the dev environment build:
 
-$ npm run dev
+```
+npm run dev
+```
 
 To run the prod environment build:
 
-$ npm run prod
+```
+npm run prod
+```
 
 ## Section 2.1.1 webpack cli command
 
