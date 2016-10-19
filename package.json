@@ -4,7 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile-to-stdout": "./node_modules/.bin/babel src/compile-me.jsx",
+    "compile": "./node_modules/.bin/babel src/compile-me.jsx --out-file compiled.js",
+    "compile-sourcemaps": "./node_modules/.bin/babel src/compile-me.jsx --out-file compiled.js --source-maps",
+    "compile-dir": "./node_modules/.bin/babel src/compile-me.jsx --out-dir dist --source-maps",
+    "compile-dir-watch": "./node_modules/.bin/babel src/compile-me.jsx --watch --out-dir /dist --source-maps",
+    "build": "./node_modules/.bin/webpack --display-error-details",
+    "build-dev": "./node_modules/.bin/webpack --display-error-details --config config/dev.config.js",
+    "build-prod": "./node_modules/.bin/webpack --display-error-details --config config/prod.config.js",
+    "start": "npm run build && node server.js",
+    "dev": "npm run build-dev && node server.js",
+    "prod": "npm run build-prod && node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,12 +27,8 @@
   },
   "homepage": "https://github.com/elyseko/chapter-3-webpack-babel#readme",
   "devDependencies": {
-    "babel-cli": "^6.14.0"
-  },
-  "dependencies": {
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1",
     "autoprefixer": "6.4.0",
+    "babel-cli": "^6.16.0",
     "babel-core": "6.14.0",
     "babel-eslint": "6.1.2",
     "babel-jest": "15.0.0",
@@ -35,17 +41,21 @@
     "babel-preset-latest": "6.14.0",
     "babel-preset-react": "6.11.1",
     "babel-runtime": "6.11.6",
+    "css-loader": "^0.25.0",
     "extract-text-webpack-plugin": "1.0.1",
-    "file-loader": "0.9.0",
-    "html-loader": "0.4.3",
-    "html-webpack-plugin": "2.22.0",
+    "html-webpack-plugin": "^2.22.0",
     "json-loader": "0.5.4",
-    "object-assign": "4.1.0",
-    "postcss-loader": "0.11.1",
-    "promise": "7.1.1",
     "style-loader": "0.13.1",
-    "url-loader": "0.5.7",
     "webpack": "1.13.2",
-    "webpack-dev-server": "1.15.1"
+    "webpack-dashboard": "^0.2.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "express": "^4.14.0",
+    "moment": "^2.15.1",
+    "object-assign": "4.1.0",
+    "react": "^15.3.1",
+    "react-big-calendar": "^0.11.0",
+    "react-dom": "^15.3.1"
   }
 }
