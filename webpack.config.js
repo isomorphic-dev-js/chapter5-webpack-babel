@@ -2,13 +2,12 @@ var path = require('path');
 
 module.exports = {
   entry: path.resolve(__dirname + '/src/main.jsx'),
-  debug: true,
   output: {
     path: path.resolve(__dirname + '/'),
     filename: 'webpack-bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
@@ -16,11 +15,11 @@ module.exports = {
       },
       {
         test:/\.css/,
-        loaders: ['style', 'css']
+        loaders: ['style-loader', 'css-loader']
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.css']
+    extensions: ['.js', '.jsx', '.css']
   }
 }

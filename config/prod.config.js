@@ -7,13 +7,10 @@ var injectEnvironment = new webpack.DefinePlugin({
 });
 
 module.exports = Object.assign(baseConfig, {
-  debug: false,
   output: {
     filename: 'prod-bundle.js'
   },
   plugins: [
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({
         compress: {
             warnings: false,
