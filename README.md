@@ -1,4 +1,4 @@
-# chapter-4-webpack-babel
+# chapter-5-webpack-babel
 
 ## Getting started
 ```
